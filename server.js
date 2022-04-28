@@ -4,8 +4,15 @@ var app = express();
 app.listen(3000);
 
 
+app.get('/', (req, res) => {
+    res.send();
+    
+});
 
-
+app.get('/rental', (req, res) => {
+    res.send();
+    
+});
 
 
 const userList = [];

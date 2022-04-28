@@ -1,9 +1,8 @@
 
-
 function createUsername()
 {
     var userName = document.getElementById("createUsernameBox").value;
-    
+
 }
 
 function login()
