@@ -9,8 +9,18 @@ app.get('/', (req, res) => {
     
 });
 
-app.get('/rental', (req, res) => {
-    res.send();
+app.get('/createUsername', (req, res) => {
+    res.send('<h2>Create Username Page</h2>');
+    
+});
+
+app.get('/createReservation', (req, res) => {
+    res.send('<h2>Create Reservation Page</h2>');
+    
+});
+
+app.get('/manageReservation', (req, res) => {
+    res.send('<h2>Manage Reservation Page</h2>');
     
 });
 
