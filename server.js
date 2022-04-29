@@ -1,36 +1,39 @@
 const fs = require('fs');
 const express = require('express');
 var app = express();
+
 app.listen(3000);
 
+
+var userList = ["Hello", "World"];
 
 app.get('/', (req, res) => {
     res.send();
     
 });
 
-app.get('/createUsername', (req, res) => {
+app.get('/createusername', (req, res) => {
     res.send('<h2>Create Username Page</h2>');
-    
+
 });
 
-app.get('/createReservation', (req, res) => {
+app.get('/createreservation', (req, res) => {
     res.send('<h2>Create Reservation Page</h2>');
     
 });
 
-app.get('/manageReservation', (req, res) => {
+app.get('/managereservation', (req, res) => {
     res.send('<h2>Manage Reservation Page</h2>');
     
 });
 
 
-const userList = [];
-
 fs.writeFile('userList.json', JSON.stringify(userList), err => {
     if (err) throw err;
     console.log('Saved');
 });
+
+
 
 
 function sayHello(yourName)
